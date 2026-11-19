@@ -1,0 +1,13 @@
+{
+  "name": "the-culture-challenge",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Quiz interculturel France-USA avec classement en direct",
+  "scripts": {"start": "node server.js"},
+  "dependencies": {
+    "express": "^4.21.2",
+    "socket.io": "^4.8.1",
+    "qrcode": "^1.5.4"
+  },
+  "engines": {"node": ">=18"}
+}

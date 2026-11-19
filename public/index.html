@@ -1,0 +1,27 @@
+<!doctype html>
+<html lang="fr"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>The Culture Challenge</title><link rel="stylesheet" href="/style.css"></head>
+<body class="player-page"><div class="stars"></div><main class="player-shell">
+  <header class="topline"><span class="flag">🇫🇷</span><span class="brand-mini">THE CULTURE CHALLENGE</span><span class="flag">🇺🇸</span></header>
+  <section id="intro" class="panel intro">
+    <div class="eyebrow">FRANCE <i>✦</i> UNITED STATES</div><div class="hero-flags">🇫🇷 <span>VS</span> 🇺🇸</div>
+    <h1>THE CULTURE<br><em>CHALLENGE</em></h1><p class="tagline">Deux cultures. Deux façons de travailler.<br>Une seule victoire.</p>
+    <div class="intro-copy">Communication, management, réunions et relations professionnelles : découvre les codes du travail des deux côtés de l'Atlantique.</div>
+    <button class="btn primary" id="enter">ENTRER DANS LE JEU <b>→</b></button>
+    <div class="tiny">8 QUESTIONS · 3 MANCHES · 1 CHAMPION</div>
+  </section>
+  <section id="register" class="panel hidden">
+    <div class="eyebrow">ÉTAPE 01 — IDENTIFICATION</div><h2>Rejoins la compétition</h2><p class="muted">Choisis ton pseudo et ton avatar. Ton nom apparaîtra dans le classement.</p>
+    <input id="name" maxlength="18" placeholder="Ton prénom ou pseudo" autocomplete="nickname">
+    <div class="avatar-grid" id="avatars"><button>🦊</button><button>🐼</button><button>🦁</button><button>🐸</button><button>🐯</button><button>🐙</button></div>
+    <button class="btn primary" id="join">REJOINDRE LA PARTIE →</button><p id="error" class="error"></p>
+  </section>
+  <section id="waiting" class="panel hidden"><div class="pulse">✦</div><div class="eyebrow">INSCRIPTION VALIDÉE</div><h2>Tu es dans la partie !</h2><p class="muted">Garde ton téléphone à portée de main.<br>L'animateur va bientôt lancer la première manche.</p><div class="waiting-pill">● EN ATTENTE DU TOP DÉPART</div><p class="tiny" id="myName"></p></section>
+  <section id="play" class="panel hidden">
+    <div class="question-meta"><span id="roundTag">MANCHE 01</span><span id="qNumber">QUESTION 1/8</span></div>
+    <div class="progress"><i id="progress"></i></div><div class="eyebrow" id="qType"></div><h2 id="qTitle"></h2><p id="qText" class="question-text"></p>
+    <div id="options" class="options"></div><div id="feedback" class="feedback hidden"></div>
+    <div class="my-score"><span>TON SCORE</span><strong id="score">0</strong><span>POINTS</span></div>
+  </section>
+  <section id="done" class="panel hidden"><div class="pulse">🏆</div><div class="eyebrow">FIN DE LA COMPÉTITION</div><h2>Bien joué !</h2><p class="muted">La partie est terminée. Regarde le podium sur l'écran principal pour découvrir le grand gagnant.</p><div class="waiting-pill">MERCI D'AVOIR JOUÉ</div></section>
+  <footer>THE CULTURE CHALLENGE <span>•</span> LE GRAND QUIZ INTERCULTUREL</footer>
+</main><script src="/socket.io/socket.io.js"></script><script src="/player.js"></script></body></html>

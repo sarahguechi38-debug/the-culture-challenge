@@ -1,0 +1,14 @@
+<!doctype html><html lang="fr"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Régie — The Culture Challenge</title><link rel="stylesheet" href="/style.css"></head><body class="host-page"><div class="host-wrap">
+<header class="host-header"><div><div class="eyebrow">RÉGIE / PRÉSENTATEUR</div><h1>THE CULTURE <em>CHALLENGE</em></h1></div><div class="live-badge"><i></i> LIVE</div></header>
+<div class="host-grid">
+<section class="screen-card main-screen">
+<div class="question-meta"><span id="round">EN ATTENTE DES CANDIDATS</span><span id="qcount">0 / 8</span></div>
+<div id="lobbyView" class="lobby-view"><div class="hero-flags">🇫🇷 <span>VS</span> 🇺🇸</div><h2>Deux cultures.<br><em>Une seule victoire.</em></h2><p>Scannez le QR code pour rejoindre le jeu.</p><button class="btn primary" id="start">LANCER L'ÉMISSION →</button></div>
+<div id="questionView" class="hidden"><div class="eyebrow" id="type"></div><h2 id="title"></h2><p class="host-question" id="text"></p><div id="hostOptions" class="host-options"></div><div id="explain" class="explain hidden"></div></div>
+<div id="finishedView" class="hidden"><div class="eyebrow">THE FINAL SCORE</div><h2>AND THE WINNER IS...</h2><div id="podium" class="podium"></div><button class="btn secondary" id="reset">NOUVELLE PARTIE ↻</button></div>
+<div class="host-controls"><button class="btn secondary" id="reveal" disabled>RÉVÉLER LA RÉPONSE</button><button class="btn primary" id="next" disabled>QUESTION SUIVANTE →</button></div>
+</section>
+<aside class="side-column">
+<section class="screen-card qr-card"><div class="eyebrow">REJOINDRE LA PARTIE</div><h3>Scannez pour jouer</h3><img id="qr" alt="QR code pour rejoindre le jeu"><div class="join-url" id="url">Chargement du lien…</div><div class="room-code">CODE : <strong id="code">-----</strong></div></section>
+<section class="screen-card players-card"><div class="eyebrow">CANDIDATS <b id="count">0</b></div><div id="players" class="player-list"><p class="muted">Les joueurs apparaîtront ici.</p></div></section>
+</aside></div><footer>FRANCE 🇫🇷 <span>×</span> UNITED STATES 🇺🇸 <span>•</span> WORKPLACE CULTURE</footer></div><script src="/socket.io/socket.io.js"></script><script src="/host.js"></script></body></html>
